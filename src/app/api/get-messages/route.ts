@@ -39,9 +39,9 @@ export async function GET(request: Request) {
       { status: 200 },
     );
   } catch (error) {
-    console.log("messager failed to get", error);
+    console.log("messages failed to get", error);
     return Response.json(
-      { success: false, message: "messager failed to get" },
+      { success: false, message: "messages failed to get" },
       { status: 500 },
     );
   }
